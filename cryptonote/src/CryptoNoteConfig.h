@@ -1,4 +1,4 @@
-  GNU nano 2.5.3                           Archivo: CryptoNoteConfig.h                                                    Modificado  
+//  GNU nano 2.5.3                           Archivo: CryptoNoteConfig.h                                                    Modificado  
 
 // Copyright (c) 2018, CryptoLuKa developers
 // Copyright (c) 2017, Intense Coin developers
@@ -31,7 +31,7 @@ const uint64_t DIFFICULTY_TARGET                             = 90; // seconds ti
 // si se pone 10 seg generaria muchos bloque sguerfanos,, recomienda  60 hasta 120segundos entre mas rapido mas genera para mineros
 const uint32_t CRYPTONOTE_MAX_BLOCK_NUMBER                   = 500000000;// el maximo de bloques de la cadena
 const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE                = 5000000000;// cuanto pesara un bloque. 
-const size_t   CRYPTONOTE_MAX_TX_SIZE                        = 1000000000;//1bye
+const size_t   CRYPTONOTE_MAX_TX_SIZE                        = 1000000000;//1byte
 const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 0x2de7e1; // addresses start with "L" el prefijo de como iniciaria nue$
 //billetera 
 const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW          = 10;//cuantos bloques  confirmaciones para liberar saldos  
@@ -88,7 +88,7 @@ const size_t   MAX_BLOCK_SIZE_INITIAL                           = 100 * 1024;// 
 const uint64_t MAX_BLOCK_SIZE_GROWTH_SPEED_NUMERATOR            = 100 * 1024;//maximo de la velocidad
 const uint64_t MAX_BLOCK_SIZE_GROWTH_SPEED_NUMERATOR_V2         = 35 * 100 * 1024;//
 const size_t   MAX_BLOCK_SIZE_ALLOWED_EVERY_N_BLOCK                             = 5;//cada 5 bloques crece los 102kilo
-const uint64_t MAX_BLOCK_SIZE_GROWTH_SPEED_DENOMINATOR          = 365 * 24 * 60 * 60 / DIFFICULTY_TARGET;duplicar el tamaño del 
+const uint64_t MAX_BLOCK_SIZE_GROWTH_SPEED_DENOMINATOR          = 365 * 24 * 60 * 60 / DIFFICULTY_TARGET;//duplicar el tamaño del 
 //bloque
 
 const uint64_t CRYPTONOTE_LOCKED_TX_ALLOWED_DELTA_BLOCKS        = 1;
